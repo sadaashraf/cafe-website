@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script
+    id="tailwind-config"> tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-container": "#3f5a00", "surface-container-highest": "#e3e3dc", "tertiary-fixed-dim": "#eed7b3", "on-tertiary-fixed-variant": "#6e5d40", "secondary-dim": "#405b00", "surface-container-lowest": "#ffffff", "on-background": "#31332f", "inverse-surface": "#0e0e0d", "surface-variant": "#e3e3dc", "secondary-fixed-dim": "#bae26e", "primary-fixed": "#fed3c7", "on-primary-fixed-variant": "#705147", "secondary-container": "#c8f17a", "on-secondary-fixed-variant": "#476400", "outline": "#7a7b76", "tertiary-container": "#fde5c0", "surface-container-low": "#f5f4ef", "inverse-on-surface": "#9e9d99", "on-surface": "#31332f", "surface-dim": "#dadad4", "on-primary-container": "#65473e", "tertiary-dim": "#615135", "primary": "#77584e", "on-error-container": "#6e1400", "error": "#a73b21", "surface-container": "#efeee9", "primary-container": "#fed3c7", "secondary-fixed": "#c8f17a", "tertiary": "#6e5d40", "surface": "#fbf9f5", "surface-tint": "#77584e", "outline-variant": "#b2b2ad", "secondary": "#4a6800", "tertiary-fixed": "#fde5c0", "on-surface-variant": "#5e605b", "on-secondary-fixed": "#304600", "on-error": "#fff7f6", "on-tertiary": "#fff8f1", "primary-dim": "#6a4c43", "inverse-primary": "#fed3c7", "on-secondary": "#f0ffce", "on-primary": "#fff7f5", "surface-container-high": "#e9e8e3", "on-primary-fixed": "#51352c", "error-dim": "#791903", "on-tertiary-container": "#635337", "on-tertiary-fixed": "#504126", "surface-bright": "#fbf9f5", "primary-fixed-dim": "#efc6b9", "error-container": "#fd795a", "background": "#fbf9f5" }, fontFamily: { "headline": ["Epilogue"], "body": ["Manrope"], "label": ["Manrope"] }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, }, }, } </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+
+    .tonal-layering-no-borders {
+      border: none !important;
+    }
+
+    body {
+      background-color: #fbf9f5;
+      color: #31332f;
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container"> <!-- TopAppBar -->
+  <header
+    class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-full border border-stone-200/20 dark:border-stone-700/20 tonal-layering-no-borders shadow-xl shadow-stone-200/50 dark:shadow-none transition-all duration-300 ease-in-out hover:scale-[1.02] flex justify-between items-center px-8 py-3 z-50">
+    <div class="flex items-center gap-2"> <span class="material-symbols-outlined text-primary"
+        data-icon="coffee">coffee</span>
+      <h1 class="text-2xl font-bold font-epilogue text-stone-900 dark:text-stone-50">The Artisan Bean</h1>
+    </div>
+    <nav class="hidden md:flex items-center gap-8"> <a
+        class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-colors font-manrope text-sm font-medium"
+        href="index.html">Home</a> <a
+        class="text-stone-900 dark:text-white font-bold border-b-2 border-stone-800 dark:border-stone-200 font-manrope text-sm"
+        href="menu.html">Menu</a> <a
+        class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-colors font-manrope text-sm font-medium"
+        href="about.html">About</a> <a
+        class="text-stone-500 hover:text-stone-800 transition-colors font-headline text-lg tracking-tight"
+        href="contact.html">Contact</a> </nav> <a href="#breakfast"
+      class="bg-gradient-to-br from-primary to-primary-dim text-on-primary px-6 py-2 rounded-full font-epilogue text-sm font-semibold tracking-tight transition-all hover:scale-105 active:scale-95">
+      Order Now </a>
+  </header>
+  <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto"> <!-- Hero Section / Editorial Intro -->
+    <section class="mb-24 flex flex-col md:flex-row items-center gap-12">
+      <div class="w-full md:w-1/2"> <span
+          class="text-secondary font-label font-semibold text-sm tracking-widest uppercase mb-4 block">Crafted
+          Daily</span>
+        <h2 class="font-headline text-6xl md:text-7xl font-bold text-on-surface leading-tight mb-6">Slow Mornings, <span
+            class="italic font-normal">Fast Spirits.</span></h2>
+        <p class="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-lg"> Every cup tells a story of
+          origin, and every plate is a canvas of local flavors. Welcome to your daily sanctuary. </p>
+      </div>
+      <div class="w-full md:w-1/2 relative"> <img
+          class="w-full h-[500px] object-cover rounded-lg shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500"
+          data-alt="Close-up of a perfectly poured latte with intricate leaf latte art on a rustic wooden table with soft morning sunlight"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW0zFZUbehPROgd2JovwyeAnl00tbuT1-0ieMfEvzLk_RT0BRtwzc_odoXpNZoS4rLZF2LKD_jKVvUkVM5AHn1E27_KxEVok2f-5jJdqW0W8Yn4Zi3r3IQeoMNDxwczMxOlYiVD-5dFUL2leEKnLqBVaf4gjzYG15gRWnWZhhec0-cXjfmYrhvNadjuNATs_jRsN9qOA_MkJxMMhZ3Q2AReEFjrUrtXwzeGAaIokMBTBu7HjB3gaSjyNZLM8ukhRZsXF_s20Nq1JI7" />
+        <div class="absolute -bottom-6 -left-6 bg-tertiary-container p-6 rounded-lg hidden lg:block max-w-[200px]">
+          <p class="font-headline text-on-tertiary-container font-bold text-lg">Fresh Sourdough</p>
+          <p class="text-on-tertiary-container/80 text-sm">Baked at 5:00 AM every single morning.</p>
+        </div>
+      </div>
+    </section> <!-- Menu Navigation / Category Filter (Visual Only) -->
+    <div class="flex flex-wrap gap-4 mb-16 justify-center"> <a href="#breakfast"
+        class="bg-primary text-on-primary px-8 py-3 rounded-full flex items-center gap-2 shadow-lg"> <span
+          class="material-symbols-outlined">bakery_dining</span> Breakfast </a> <a href="#lunch"
+        class="bg-surface-container-low text-on-surface hover:bg-surface-container-high px-8 py-3 rounded-full flex items-center gap-2 transition-colors">
+        <span class="material-symbols-outlined">lunch_dining</span> Lunch </a> <a href="#drinks"
+        class="bg-surface-container-low text-on-surface hover:bg-surface-container-high px-8 py-3 rounded-full flex items-center gap-2 transition-colors">
+        <span class="material-symbols-outlined">local_cafe</span> Drinks </a> <a href="#desserts"
+        class="bg-surface-container-low text-on-surface hover:bg-surface-container-high px-8 py-3 rounded-full flex items-center gap-2 transition-colors">
+        <span class="material-symbols-outlined">icecream</span> Desserts </a> </div>
+    <!-- Menu Sections (Asymmetric Layouts) -->
+    <div class="space-y-32">
+
+      <section id="breakfast" class="mb-20">
+        <div class="flex items-baseline gap-4 mb-10">
+          <h3 class="text-4xl font-bold font-epilogue">Sunrise Plates</h3>
+          <div class="h-px flex-grow bg-stone-300"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80"
+              class="h-56 w-full object-cover" alt="Buttermilk Pancakes">
+            <div class="p-5">
+              <h4 class="text-xl font-bold text-stone-800">Honeycomb Gelato</h4>
+              <p class="text-sm text-gray-600">Whipped honey butter and organic maple syrup.</p>
+              <span class="text-orange-600 font-bold block mt-2">$12.50</span>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80"
+              class="h-56 w-full object-cover" alt="Artisan Omelette">
+            <div class="p-5">
+              <h4 class="text-xl font-bold text-stone-800">The Garden Omelette</h4>
+              <p class="text-sm text-gray-600">Farm eggs, aged gruyère, and forest mushrooms.</p>
+              <span class="text-orange-600 font-bold block mt-2">$14.00</span>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80"
+              class="h-56 w-full object-cover" alt="Brioche Toast">
+            <div class="p-5">
+              <h4 class="text-xl font-bold text-stone-800">Brioche French Toast</h4>
+              <p class="text-sm text-gray-600">Cinnamon custard and caramelized bananas.</p>
+              <span class="text-orange-600 font-bold block mt-2">$13.50</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="drinks" class="mb-20">
+        <div class="flex items-baseline gap-4 mb-10">
+          <h3 class="text-4xl font-bold font-epilogue">The Brew Bar</h3>
+          <div class="h-px flex-grow bg-stone-300"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80"
+              class="h-56 w-full object-cover" alt="Cappuccino">
+            <div class="p-5">
+              <h4 class="text-xl font-bold text-stone-800">Cloud Cappuccino</h4>
+              <p class="text-sm text-gray-600">Double espresso with velvet micro-foam.</p>
+              <span class="text-orange-600 font-bold block mt-2">$5.50</span>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+            <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=800&q=80"
+              class="h-56 w-full object-cover" alt="Fresh Juice">
+            <div class="p-5">
+              <h4 class="text-xl font-bold text-stone-800">Cold Pressed Zest</h4>
+              <p class="text-sm text-gray-600">Blood orange, ginger, and turmeric.</p>
+              <span class="text-orange-600 font-bold block mt-2">$7.00</span>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"
+              class="h-56 w-full object-cover" alt="Cold Brew">
+            <div class="p-5">
+              <h4 class="text-xl font-bold text-stone-800">Midnight Cold Brew</h4>
+              <p class="text-sm text-gray-600">18-hour steep with vanilla bean cream.</p>
+              <span class="text-orange-600 font-bold block mt-2">$6.50</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="lunch" class="mb-20">
+        <div class="flex items-baseline gap-4 mb-10">
+          <h3 class="text-4xl font-bold font-epilogue">Midday Social</h3>
+          <div class="h-px flex-grow bg-stone-300"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80"
+              class="h-56 w-full object-cover" alt="Burger">
+            <div class="p-5">
+              <h4 class="text-xl font-bold text-stone-800">The Artisan Wagyu</h4>
+              <p class="text-sm text-gray-600">Grass-fed beef, truffle aioli, and brioche.</p>
+              <span class="text-orange-600 font-bold block mt-2">$18.00</span>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80"
+              class="h-56 w-full object-cover" alt="Salad">
+            <div class="p-5">
+              <h4 class="text-xl font-bold text-stone-800">Harvest Power Bowl</h4>
+              <p class="text-sm text-gray-600">Quinoa, roasted kale, and lemon tahini.</p>
+              <span class="text-orange-600 font-bold block mt-2">$15.50</span>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+            <img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&w=800&q=80"
+              class="h-56 w-full object-cover" alt="Pasta">
+            <div class="p-5">
+              <h4 class="text-xl font-bold text-stone-800">Pesto Rigatoni</h4>
+              <p class="text-sm text-gray-600">Fresh basil, pine nuts, and aged parmesan.</p>
+              <span class="text-orange-600 font-bold block mt-2">$16.50</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="desserts" class="mb-20">
+        <div class="flex items-baseline gap-4 mb-10">
+          <h3 class="text-4xl font-bold font-epilogue">Sweet Coda</h3>
+          <div class="h-px flex-grow bg-stone-300"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80"
+              class="h-56 w-full object-cover" alt="Chocolate">
+            <div class="p-5">
+              <h4 class="text-xl font-bold text-stone-800">Sea Salt Ganache</h4>
+              <p class="text-sm text-gray-600">Dark chocolate silk and flaky sea salt.</p>
+              <span class="text-orange-600 font-bold block mt-2">$9.00</span>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80"
+              class="h-56 w-full object-cover" alt="Gelato">
+            <div class="p-5">
+              <h4 class="text-xl font-bold text-stone-800">Honeycomb Gelato</h4>
+              <p class="text-sm text-gray-600">Hand-churned vanilla with house honeycomb.</p>
+              <span class="text-orange-600 font-bold block mt-2">$8.00</span>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80"
+              class="h-56 w-full object-cover" alt="Lemon Tart">
+            <div class="p-5">
+              <h4 class="text-xl font-bold text-stone-800">Lemon Cloud Tart</h4>
+              <p class="text-sm text-gray-600">Zesty curd and toasted Italian meringue.</p>
+              <span class="text-orange-600 font-bold block mt-2">$9.50</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main> <!-- Footer -->
+  <footer class="bg-stone-50 dark:bg-stone-950 w-full rounded-t-[3rem] mt-20 tonal-shift-from-surface-to-container-low">
+    <div class="max-w-7xl mx-auto px-8 py-16 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="text-center md:text-left"> <span
+          class="font-epilogue text-2xl font-bold text-stone-900 dark:text-stone-100">The Artisan Bean</span>
+        <p class="text-stone-500 dark:text-stone-400 mt-2 font-manrope text-sm">© 2024 The Artisan Bean. Handcrafted
+          with Heart.</p>
+      </div>
+      <div class="flex gap-8"> <a
+          class="text-stone-500 dark:text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 underline underline-offset-4 decoration-stone-300 dark:decoration-stone-700 transition-opacity opacity-80 hover:opacity-100 font-manrope text-sm"
+          href="#">Home</a> <a
+          class="text-stone-500 dark:text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 underline underline-offset-4 decoration-stone-300 dark:decoration-stone-700 transition-opacity opacity-80 hover:opacity-100 font-manrope text-sm"
+          href="#">About</a> <a
+          class="text-stone-900 dark:text-stone-50 font-medium underline underline-offset-4 decoration-stone-300 dark:decoration-stone-700 transition-opacity opacity-80 hover:opacity-100 font-manrope text-sm"
+          href="#">Menu</a> <a
+          class="text-stone-500 dark:text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 underline underline-offset-4 decoration-stone-300 dark:decoration-stone-700 transition-opacity opacity-80 hover:opacity-100 font-manrope text-sm"
+          href="#">Contact</a> <a
+          class="text-stone-500 dark:text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 underline underline-offset-4 decoration-stone-300 dark:decoration-stone-700 transition-opacity opacity-80 hover:opacity-100 font-manrope text-sm"
+          href="#">Privacy</a> </div>
+      <div class="flex gap-4"> <span
+          class="material-symbols-outlined p-2 bg-white rounded-full text-stone-700 shadow-sm"
+          data-icon="alternate_email">alternate_email</span> <span
+          class="material-symbols-outlined p-2 bg-white rounded-full text-stone-700 shadow-sm"
+          data-icon="location_on">location_on</span> </div>
+    </div>
+  </footer>
+</body>
+
+</html>
